@@ -19,7 +19,7 @@ app.use(ejsLayouts);
 //Public View Css,Javascripts,Images Folders
 app.use('/public',express.static(path.join(__dirname,'public')));
 
-//Admin Panel Router
+//Default Routing
 app.use('/', routings);
 
 http.listen(3333);
